@@ -1,0 +1,7 @@
+% layout 'default';
+% title 'user login';
+<form action="/user/login" method="post">
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="password">
+  <button type="submit">login</button>
+</form>
