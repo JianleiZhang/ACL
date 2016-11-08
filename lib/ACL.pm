@@ -20,6 +20,7 @@ sub startup {
   # Normal route to controller
   $r->get('/')->to('example#welcome');
   $r->get('/user/login')->to('user#login_page');
+  $r->post('/user/login')->to('user#login');
 }
 
 1;
