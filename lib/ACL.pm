@@ -73,6 +73,8 @@ sub startup {
   $r->get('/')->to('example#welcome');
   $r->get('/user/login')->to('user#login_page');
   $r->post('/user/login')->to('user#login');
+  $a->get('/permission')->to('permission#list')->name('get_permission');
+  $a->post('/permission')->to('permission#update')->name('post_permission');
   $a->get('/test1')->to('example#welcome')->name('route_name_1');
   $a->get('/test2')->to('example#welcome')->name('route_name_2');
   $a->get('/test3')->to('example#welcome')->name('route_name_3');

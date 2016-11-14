@@ -1,0 +1,28 @@
+% layout 'default';
+% title 'permission list';
+% foreach (@$roles) {
+<form action="/permission" method="post">
+  <input type="hidden" name="name" value="<%= $_->{name} %>" />
+  <table>
+    <tr>
+      <th><%= $_->{name} %></th>
+    </tr>
+    % foreach (@{$_->{permissions}}) {
+    <tr>
+      <td><%= $_->{name} %></td>
+      <td>
+        <input
+           type="checkbox"
+           name="permission"
+           value="<%= $_->{id} %>"
+           %= $_->{checked}
+           />
+      </td>
+    </tr>
+    % }
+    <tr>
+      <th><input type="submit" value="Submit" /></th>
+    </tr>
+  </table>
+</form>
+% }

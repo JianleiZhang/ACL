@@ -17,12 +17,14 @@ my @table = (
 );
 
 my @data = (
+  "INSERT INTO permissions VALUES (DEFAULT, 'get_permission', 'get_permission')",
+  "INSERT INTO permissions VALUES (DEFAULT, 'post_permission', 'post_permission')",
   "INSERT INTO permissions VALUES (DEFAULT, 'permission_description_1', 'route_name_1')",
   "INSERT INTO permissions VALUES (DEFAULT, 'permission_description_2', 'route_name_2')",
   "INSERT INTO permissions VALUES (DEFAULT, 'permission_description_3', 'route_name_3')",
   "INSERT INTO roles VALUES (DEFAULT, 'admin', ARRAY[1,2,3])",
   "INSERT INTO roles VALUES (DEFAULT, 'user', ARRAY[1,2])",
-  "INSERT INTO users VALUES (DEFAULT, 'user_1', '123456', ARRAY[1])",
+  "INSERT INTO users VALUES (DEFAULT, 'user_1', '111111', ARRAY[1])",
   "INSERT INTO users VALUES (DEFAULT, 'user_2', '123456', ARRAY[2])",
 );
 
